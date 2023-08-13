@@ -40,7 +40,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Pinterest",
-    href: "https://www.pinterest.com/homefeed/",
+    href: "https://www.pinterest.com/ugst1871/",
     linkTitle: `${SITE.title} on Pinterest`,
     active: true,
   },
