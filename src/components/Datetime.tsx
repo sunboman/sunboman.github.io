@@ -41,7 +41,6 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
     minute: "2-digit",
   });
 
-  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone
 
   return (
     <>
@@ -49,7 +48,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
       <span aria-hidden="true"> | </span>
       <span className="sr-only">&nbsp;at&nbsp;</span>
       {time}&nbsp;
-      {tz}
+      {LOCALE[0]}
     </>
   );
 };
