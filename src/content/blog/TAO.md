@@ -1,7 +1,7 @@
 ---
 author: Bo Sun
 pubDatetime: 2020-10-25T06:22:00Z
-title: 'TAO: Facebook’s Distributed Data Store for the Social Graph'
+title: 'TAO'
 featured: false
 draft: false
 tags:
