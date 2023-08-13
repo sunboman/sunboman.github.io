@@ -27,7 +27,7 @@ TAO suits for social graph model with much higher read than write
 
 A typical social graph model:
 
-![/assets/TAO/Untitled.png](/assets/TAO/Untitled.png)
+![/assets/TAO/Untitled.jpg](/assets/TAO/Untitled.jpg)
 
 ### Objects and Associations
 
@@ -85,7 +85,7 @@ Association List: (id1, atype) -> [a_new...a_old]
 
 ### Scaling geographically
 
-![/assets/TAO/Untitled%201.png](/assets/TAO/Untitled%201.png)
+![/assets/TAO/Untitled%201.jpg](/assets/TAO/Untitled%201.jpg)
 
 - In Facebook production environment, followers, leaders and databases may be located thousands of miles apart and the network round trip is slow
 - Facebook used a Master/Slave architecture as showed in the picture
