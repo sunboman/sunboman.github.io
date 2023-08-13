@@ -42,8 +42,8 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
   });
 
   const tz = myDatetime.toLocaleTimeString(LOCALE, {
-    timeZoneName: 'short',
-  }).slice(-3)
+    timeZoneName: 'shortGeneric',
+  }).slice(-2)
 
 
   return (
