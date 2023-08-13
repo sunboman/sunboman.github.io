@@ -1,0 +1,33 @@
+---
+import Card from "@components/Card";
+import Tag from "@components/Tag.astro";
+import slugify from "@utils/slugify";
+import { slugifyStr } from "@utils/slugify";
+import type { BlogFrontmatter } from "@content/_schemas";
+
+export interface Props {
+  frontmatter: BlogFrontmatter;
+  secHeading?: boolean;
+}
+
+const { frontmatter, secHeading = false } = Astro.props;
+
+const tags = frontmatter.tags;
+---
+
+<div class="card-with-tag">
+  <Card href={`/posts/${slugify(frontmatter)}`} frontmatter={frontmatter} secHeading={secHeading}/>
+  <ul class="tags-container">
+    {tags.map(tag => <Tag name={slugifyStr(tag)} />)}
+  </ul>
+</div>
+
+<style>
+	.card-with-tag {
+		margin-top: 1.5rem;
+	}
+
+	/* .tags-container {
+		margin-top: 0.5rem;
+	} */
+</style>
