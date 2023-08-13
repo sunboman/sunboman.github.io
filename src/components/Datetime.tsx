@@ -43,7 +43,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
 
   const tz = myDatetime.toLocaleTimeString(LOCALE, {
     day: '2-digit',
-    timeZoneName: 'shortGeneric',
+    timeZoneName: 'short',
   }).slice(4)
 
 
