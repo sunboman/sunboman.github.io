@@ -41,6 +41,11 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
     minute: "2-digit",
   });
 
+  const tz = myDatetime.toLocaleTimeString(LOCALE, {
+    day: '2-digit',
+    timeZoneName: 'shortGeneric',
+  }).slice(4)
+
 
   return (
     <>
@@ -48,7 +53,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
       <span aria-hidden="true"> | </span>
       <span className="sr-only">&nbsp;at&nbsp;</span>
       {time}&nbsp;
-      {LOCALE[0]}
+      {tz}
     </>
   );
 };
