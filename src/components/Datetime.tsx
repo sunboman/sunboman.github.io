@@ -1,4 +1,4 @@
-import { LOCALE } from "@config";
+import { LOCALE, TIMEZONE } from "@config";
 
 export interface Props {
   datetime: string | Date;
@@ -34,15 +34,17 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
     year: "numeric",
     month: "long",
     day: "numeric",
-    timeZone: "America/Los_Angeles",
+    timeZone: TIMEZONE,
   });
 
   const time = myDatetime.toLocaleTimeString(LOCALE, {
     hour: "2-digit",
     minute: "2-digit",
+    timeZone:TIMEZONE,
   });
 
   const tz = myDatetime.toLocaleTimeString(LOCALE, {
+    timeZone: TIMEZONE,
     timeZoneName: 'shortGeneric',
   }).slice(-2)
 

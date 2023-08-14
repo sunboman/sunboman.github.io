@@ -11,6 +11,7 @@ export const SITE: Site = {
 };
 
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const TIMEZONE = "America/Los_Angeles";
 
 export const LOGO_IMAGE = {
   enable: false,
