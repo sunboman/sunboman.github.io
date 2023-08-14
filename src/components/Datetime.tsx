@@ -34,6 +34,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "America/Los_Angeles",
   });
 
   const time = myDatetime.toLocaleTimeString(LOCALE, {
