@@ -7,7 +7,8 @@ draft: false
 tags:
   - paper
   - database
-description: "TAO"
+description:
+    "Review the paper TAO: Facebook’s Distributed Data Store for the Social Graph"
 ---
 
 # <a href="https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf" target="_blank">TAO</a>
