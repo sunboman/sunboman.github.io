@@ -10,7 +10,7 @@ tags:
 description: "TAO"
 ---
 
-# TAO
+# <a href="https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf" target="_blank">TAO</a>
 
  TAO is a distributed datastore serving with API tailored for social graph.
 ## Background
