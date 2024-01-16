@@ -1,6 +1,6 @@
 {
   "name": "my-blog",
-  "version": "2.3.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro check --watch & astro dev",
     "start": "astro dev",
@@ -15,9 +15,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@astrojs/mdx": "^2.0.4",
     "@astrojs/rss": "^2.4.1",
     "@resvg/resvg-js": "^2.4.1",
-    "astro": "^2.4.5",
+    "astro": "^4.0.0",
     "fuse.js": "^6.6.2",
     "github-slugger": "^2.0.0",
     "remark-collapse": "^0.1.2",
