@@ -5,5 +5,5 @@ m ?= "publish"  # Default commit message
 # Target: publish
 publish:
 	git add .
-	git commit -m '$(m)'
+	git commit -m $(m)
 	git push
